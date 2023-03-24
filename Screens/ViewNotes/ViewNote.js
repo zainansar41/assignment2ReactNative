@@ -18,7 +18,6 @@ export default function ViewNote({ navigation }) {
       get(notesQuery).then((snapshot) => {
         const notes = snapshot.val();
         const NoteARR= Object.values(notes);
-        console.log(NoteARR);
         SetNotesState(NoteARR)
       }).catch((error) => {
         console.log('Error getting notes:', error);
