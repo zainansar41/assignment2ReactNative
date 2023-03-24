@@ -13,10 +13,10 @@ export default function Login({ navigation }) {
   const [email, setEmail] = useState('')
   const [Password, setPassword] = useState('')
 
-  // useEffect(()=>{
-  //   Alert.alert("For Login", "Use \n Email: zain@gmail.com \n Password: 12345")
+  useEffect(()=>{
+    Alert.alert("For Login", "Use \n Email: zain@gmail.com \n Password: 123456")
 
-  // },[])
+  },[])
 
   const Login = () => {
     try {
